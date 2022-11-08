@@ -1,0 +1,14 @@
+C:\Users\Juanca\source\repos\CSPharma_Juanca\DAL\bin\Debug\net6.0\DAL.deps.json
+C:\Users\Juanca\source\repos\CSPharma_Juanca\DAL\bin\Debug\net6.0\DAL.runtimeconfig.json
+C:\Users\Juanca\source\repos\CSPharma_Juanca\DAL\bin\Debug\net6.0\DAL.dll
+C:\Users\Juanca\source\repos\CSPharma_Juanca\DAL\bin\Debug\net6.0\DAL.pdb
+C:\Users\Juanca\source\repos\CSPharma_Juanca\DAL\obj\Debug\net6.0\DAL.csproj.AssemblyReference.cache
+C:\Users\Juanca\source\repos\CSPharma_Juanca\DAL\obj\Debug\net6.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Juanca\source\repos\CSPharma_Juanca\DAL\obj\Debug\net6.0\DAL.AssemblyInfoInputs.cache
+C:\Users\Juanca\source\repos\CSPharma_Juanca\DAL\obj\Debug\net6.0\DAL.AssemblyInfo.cs
+C:\Users\Juanca\source\repos\CSPharma_Juanca\DAL\obj\Debug\net6.0\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Juanca\source\repos\CSPharma_Juanca\DAL\obj\Debug\net6.0\DAL.dll
+C:\Users\Juanca\source\repos\CSPharma_Juanca\DAL\obj\Debug\net6.0\refint\DAL.dll
+C:\Users\Juanca\source\repos\CSPharma_Juanca\DAL\obj\Debug\net6.0\DAL.pdb
+C:\Users\Juanca\source\repos\CSPharma_Juanca\DAL\obj\Debug\net6.0\DAL.genruntimeconfig.cache
+C:\Users\Juanca\source\repos\CSPharma_Juanca\DAL\obj\Debug\net6.0\ref\DAL.dll
