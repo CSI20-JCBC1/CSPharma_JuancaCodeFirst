@@ -824,19 +824,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Juanca\\.nuget\\packages\\": {}
+    "C:\\Users\\Juan Carlos Bada\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Juanca\\OneDrive\\Escritorio\\CSPharma_Juanca\\DAL\\DAL.csproj",
+      "projectUniqueName": "C:\\Users\\Juan Carlos Bada\\source\\repos\\CSPharma_JuancaCodeFirst\\DAL\\DAL.csproj",
       "projectName": "DAL",
-      "projectPath": "C:\\Users\\Juanca\\OneDrive\\Escritorio\\CSPharma_Juanca\\DAL\\DAL.csproj",
-      "packagesPath": "C:\\Users\\Juanca\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Juanca\\OneDrive\\Escritorio\\CSPharma_Juanca\\DAL\\obj\\",
+      "projectPath": "C:\\Users\\Juan Carlos Bada\\source\\repos\\CSPharma_JuancaCodeFirst\\DAL\\DAL.csproj",
+      "packagesPath": "C:\\Users\\Juan Carlos Bada\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Juan Carlos Bada\\source\\repos\\CSPharma_JuancaCodeFirst\\DAL\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Juanca\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Juan Carlos Bada\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

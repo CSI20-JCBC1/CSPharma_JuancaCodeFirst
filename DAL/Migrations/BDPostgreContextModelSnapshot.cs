@@ -24,12 +24,7 @@ namespace DAL.Migrations
 
             modelBuilder.Entity("DAL.Models.Tdc_cat_estados_devolucion_pedido", b =>
                 {
-                    b.Property<string>("Md_uuid")
-                        .HasColumnType("text")
-                        .HasColumnName("Md_uuid");
-
                     b.Property<string>("Cod_estado_devolucion")
-                        .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("Cod_estado_devolucion");
 
@@ -48,19 +43,19 @@ namespace DAL.Migrations
                         .HasColumnType("timestamp with time zone")
                         .HasColumnName("Md_date");
 
-                    b.HasKey("Md_uuid");
+                    b.Property<string>("Md_uuid")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("Md_uuid");
 
-                    b.ToTable("tdc_cat_estados_devolucion_pedido", "dwh_torrecontrol");
+                    b.HasKey("Cod_estado_devolucion");
+
+                    b.ToTable("Tdc_cat_estados_devolucion_pedido", "dwh_torrecontrol");
                 });
 
             modelBuilder.Entity("DAL.Models.Tdc_cat_estados_envio_pedido", b =>
                 {
-                    b.Property<string>("Md_uuid")
-                        .HasColumnType("text")
-                        .HasColumnName("Md_uuid");
-
                     b.Property<string>("Cod_estado_envio")
-                        .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("Cod_estado_envio");
 
@@ -79,19 +74,19 @@ namespace DAL.Migrations
                         .HasColumnType("timestamp with time zone")
                         .HasColumnName("Md_date");
 
-                    b.HasKey("Md_uuid");
+                    b.Property<string>("Md_uuid")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("Md_uuid");
 
-                    b.ToTable("tdc_cat_estados_envio_pedido", "dwh_torrecontrol");
+                    b.HasKey("Cod_estado_envio");
+
+                    b.ToTable("Tdc_cat_estados_envio_pedido", "dwh_torrecontrol");
                 });
 
             modelBuilder.Entity("DAL.Models.Tdc_cat_estados_pago_pedido", b =>
                 {
-                    b.Property<string>("Md_uuid")
-                        .HasColumnType("text")
-                        .HasColumnName("Md_uuid");
-
                     b.Property<string>("Cod_estado_pago")
-                        .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("Cod_estado_pago");
 
@@ -110,26 +105,26 @@ namespace DAL.Migrations
                         .HasColumnType("timestamp with time zone")
                         .HasColumnName("Md_date");
 
-                    b.HasKey("Md_uuid");
+                    b.Property<string>("Md_uuid")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("Md_uuid");
 
-                    b.ToTable("tdc_cat_estados_pago_pedido", "dwh_torrecontrol");
+                    b.HasKey("Cod_estado_pago");
+
+                    b.ToTable("Tdc_cat_estados_pago_pedido", "dwh_torrecontrol");
                 });
 
             modelBuilder.Entity("DAL.Models.Tdc_cat_lineas_distribucion", b =>
                 {
-                    b.Property<string>("Md_uuid")
+                    b.Property<string>("Cod_linea")
                         .HasColumnType("text")
-                        .HasColumnName("Md_uuid");
+                        .HasColumnName("Cod_linea");
 
                     b.Property<string>("Cod_barrio")
                         .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("Cod_barrio");
-
-                    b.Property<string>("Cod_linea")
-                        .IsRequired()
-                        .HasColumnType("text")
-                        .HasColumnName("Cod_linea");
 
                     b.Property<string>("Cod_municipio")
                         .IsRequired()
@@ -152,16 +147,24 @@ namespace DAL.Migrations
                         .HasColumnType("timestamp with time zone")
                         .HasColumnName("Md_date");
 
-                    b.HasKey("Md_uuid");
+                    b.Property<string>("Md_uuid")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("Md_uuid");
 
-                    b.ToTable("tdc_cat_lineas_distribucion", "dwh_torrecontrol");
+                    b.HasKey("Cod_linea");
+
+                    b.ToTable("Tdc_cat_lineas_distribucion", "dwh_torrecontrol");
                 });
 
             modelBuilder.Entity("DAL.Models.Tdc_tch_estado_pedidos", b =>
                 {
-                    b.Property<string>("Md_uuid")
-                        .HasColumnType("text")
-                        .HasColumnName("Md_uuid");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasColumnName("Id");
+
+                    NpgsqlPropertyBuilderExtensions.UseSerialColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Cod_estado_devolucion")
                         .HasColumnType("text")
@@ -185,18 +188,16 @@ namespace DAL.Migrations
                         .HasColumnType("text")
                         .HasColumnName("Cod_pedido");
 
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
-                        .HasColumnName("Id");
-
-                    NpgsqlPropertyBuilderExtensions.UseSerialColumn(b.Property<int>("Id"));
-
                     b.Property<DateTime>("Md_date")
                         .HasColumnType("timestamp with time zone")
                         .HasColumnName("Md_date");
 
-                    b.HasKey("Md_uuid");
+                    b.Property<string>("Md_uuid")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("Md_uuid");
+
+                    b.HasKey("Id");
 
                     b.HasIndex("Cod_estado_devolucion");
 
@@ -206,7 +207,7 @@ namespace DAL.Migrations
 
                     b.HasIndex("Cod_linea");
 
-                    b.ToTable("tdc_tch_estado_pedidos", "dwh_torrecontrol");
+                    b.ToTable("Tdc_tch_estado_pedidos", "dwh_torrecontrol");
                 });
 
             modelBuilder.Entity("DAL.Models.Tdc_tch_estado_pedidos", b =>
